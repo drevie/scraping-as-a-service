@@ -2,7 +2,7 @@ from database import ProxyMongoClient
 import random
 import os
 
-client = ProxyMongoClient(os.environ['PROXY_DB_URI'])
+client = ProxyMongoClient()
 proxy_db = client.tmdb
 
 

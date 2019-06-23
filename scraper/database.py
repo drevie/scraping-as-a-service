@@ -1,11 +1,12 @@
 import pymongo
+import os
+from set_env import set_env
+set_env()
 
-def MyMongoClient(uri):
-	production_mongouri = uri
-	client = pymongo.MongoClient(production_mongouri)
+def MyMongoClient():
+	client = pymongo.MongoClient(os.environ['MONGO_URI'])
 	return client
 
-def ProxyMongoClient(uri):
-	production_mongouri = uri
-	client = pymongo.MongoClient(production_mongouri)
+def ProxyMongoClient():
+	client = pymongo.MongoClient(os.environ['PROXY_DB_URI'])
 	return client

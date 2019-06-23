@@ -64,7 +64,7 @@ def run_scraper_for_all_accounts(db):
 
 
 if __name__ == '__main__':
-    client = MyMongoClient(os.environ['MONGO_URI'])
+    client = MyMongoClient()
 
     if '-test' in sys.argv:
         db = client.scrapingTestDb
