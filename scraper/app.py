@@ -1,6 +1,3 @@
-
-from set_env import set_env
-set_env()
 from pprint import pprint
 from session import get_proxied_session
 from threading import Thread
