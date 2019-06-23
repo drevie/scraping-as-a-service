@@ -1,0 +1,8 @@
+.env
+.vscode
+node_modules
+
+*.pyc
+__pycache__
+env
+set_env.py
